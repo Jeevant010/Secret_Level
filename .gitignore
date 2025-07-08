@@ -85,3 +85,30 @@ DerivedDataCache/*
 *.sdf
 *.VC.db
 *.VC.opendb
+
+# ─── Unreal Engine Binary Assets ───────────────────────────────────────────────
+*.uasset filter=lfs diff=lfs merge=lfs -text
+*.umap   filter=lfs diff=lfs merge=lfs -text
+*.fbx    filter=lfs diff=lfs merge=lfs -text
+*.png    filter=lfs diff=lfs merge=lfs -text
+*.wav    filter=lfs diff=lfs merge=lfs -text
+*.bin    filter=lfs diff=lfs merge=lfs -text
+
+# ─── General Binary Files ──────────────────────────────────────────────────────
+*.exe    filter=lfs diff=lfs merge=lfs -text
+*.dll    filter=lfs diff=lfs merge=lfs -text
+
+# ─── Source Files (force LF line endings) ──────────────────────────────────────
+*.cpp    text eol=lf
+*.h      text eol=lf
+*.cs     text eol=lf
+
+# ─── Config and Text Files ─────────────────────────────────────────────────────
+*.ini    text eol=lf
+*.txt    text eol=lf
+*.json   text eol=lf
+*.log    text eol=lf
+*.md     text eol=lf
+
+# ─── General Settings ──────────────────────────────────────────────────────────
+* text=auto
